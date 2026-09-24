@@ -9,7 +9,7 @@ or if you have ssh
 git clone git@github.com:0xRafay/CS-1011.git
 ```
 
-## how to run?
+## How to run?
 
 example of compiling one file, when inside root
 ```
