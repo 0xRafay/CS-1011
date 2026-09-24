@@ -25,7 +25,7 @@ int main() {
     // after getting the input, now we need a way to figure the
     // selling price of the product.
     // we can do that by multiplying the product price with the percentage.
-    // the percentage, as we discovered is 80%
+    // the markup percentage, as we were given is 80%
 
     double percentage = 80.0 / 100.0; // 80%
 
