@@ -3,11 +3,11 @@
 int main() {
     // what is asked of us?
     /*
-     * To make a profit, the prices of the items sold in a furniture store are
-     * marked up by 80%. After marking up the prices, each item is put on sale
+     * to make a profit, the prices of the items sold in a furniture store are
+     * marked up by 80%. after marking up the prices, each item is put on sale
      * at a discount of 10%.
-     * Design an algorithm to find the selling price of an
-     * item sold at the furniture store. What information do you need to find
+     * design an algorithm to find the selling price of an
+     * item sold at the furniture store. what information do you need to find
      * the selling price?
      */
     // so the main question is how i can find the selling price of an item.
@@ -16,13 +16,11 @@ int main() {
     // so the first percentage we have is 80%, we have to increase the price of
     // the product by 80% so first, we will try to get the users input into a
     // var and start from there
-    double price; // we chose double for the sake of fractional multiplication
-                  // its easier to handle and is more precise
+    double cost; // we chose double for the sake of fractional multiplication
+                 // its easier to handle and is more precise
 
-    std::cout << "Enter price of furniture: $";
-    std::cin >> price; // grabs the input
-
-    std::cout << "\n$" << price << std::endl;
+    std::cout << "enter price of furniture: $";
+    std::cin >> cost; // grabs the input
 
     // after getting the input, now we need a way to figure the acutal price of
     // the product.
@@ -31,19 +29,19 @@ int main() {
 
     double percentage = 80.0 / 100.0; // 80%
 
-    double result = price + (price * (percentage));
+    double markUp = cost + (cost * (percentage));
 
     // after this, we get the price increased by 80%, now there is
     // a discount on it, of 10%
     // that would be as follows
 
-    percentage = 10.0 / 100.0; // overwriting the pervious value
+    double discount = 10.0 / 100.0;
 
     // subtract because a discount reduces the marked-up price
-    double final = result - (result * (percentage));
+    double sellingPrice = markUp - (markUp * (discount));
 
     // explicit type cast. for the sake of consistency
-    std::cout << "\n$" << (double) final << std::endl;
+    std::cout << "\nSelling Price: $" << (double)sellingPrice << std::endl;
 
     return 0;
 }
