@@ -29,16 +29,16 @@ int main() {
 
     double percentage = 80.0 / 100.0; // 80%
 
-    double markUp = cost + (cost * (percentage));
+    double markupRate = cost + (cost * (percentage));
 
     // after this, we get the price increased by 80%, now there is
     // a discount on it, of 10%
     // that would be as follows
 
-    double discount = 10.0 / 100.0;
+    double discountRate = 10.0 / 100.0;
 
     // subtract because a discount reduces the marked-up price
-    double sellingPrice = markUp - (markUp * (discount));
+    double sellingPrice = markupRate - (markupRate * (discountRate));
 
     std::cout << "\nSelling Price: $" << sellingPrice << std::endl;
 
