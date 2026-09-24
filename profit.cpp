@@ -40,8 +40,7 @@ int main() {
     // subtract because a discount reduces the marked-up price
     double sellingPrice = markUp - (markUp * (discount));
 
-    // explicit type cast. for the sake of consistency
-    std::cout << "\nSelling Price: $" << (double)sellingPrice << std::endl;
+    std::cout << "\nSelling Price: $" << sellingPrice << std::endl;
 
     return 0;
 }
